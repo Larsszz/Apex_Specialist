@@ -1,0 +1,7 @@
+<!--
+ - Created by Xiaomi on 9/19/2019.
+ -->
+
+<aura:event type="COMPONENT">
+    <aura:attribute name="item" type="Camping_Item__c"/>
+</aura:event>

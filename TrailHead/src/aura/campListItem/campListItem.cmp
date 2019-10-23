@@ -1,0 +1,16 @@
+<!--
+ - Created by Xiaomi on 9/12/2019.
+ -->
+
+<aura:component description="campListItem">
+    <aura:attribute name="item" type="Camping_Item__c"/>
+    <p>{!v.item.Name}</p>
+    <p>{!v.item.Price__c}</p>
+    <p>{!v.item.Quantity__c}</p>
+    <p>{!v.item.Packed__c}</p>
+
+    <lightning:input type="number" label="Price" value="{!v.item.Price__c}"/>
+    <lightning:input type="number" label="Quantity" value="{!v.item.Quantity__c}"/>
+
+    <lightning:input type="toggle" label="Packed" checked="{!v.item.Packed__c}"/>
+</aura:component>
